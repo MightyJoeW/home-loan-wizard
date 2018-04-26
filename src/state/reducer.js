@@ -165,7 +165,6 @@ function reducer(state = initialState, action){
             return Object.assign({}, state, { credit: action.payload })
         case UPDATE_DOWN_PAYMENT:
             return Object.assign({}, state, { downPayment: action.payload })
-        case UPDATE_FIRST_NAME:
         case UPDATE_EMAIL:
             return Object.assign({}, state, { email: action.payload })
         case UPDATE_FIRST_NAME:

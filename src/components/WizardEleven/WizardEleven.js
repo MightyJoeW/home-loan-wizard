@@ -1,11 +1,11 @@
-import React,  { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class WizardEleven extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="parent-div">
                 <div className="vert-align">
                     <p>Here is an over view of your form:</p>

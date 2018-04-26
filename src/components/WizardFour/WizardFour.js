@@ -1,4 +1,4 @@
-import React,  { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateFound } from '../../state/reducer';
@@ -12,8 +12,8 @@ class WizardFour extends Component {
                     <p>Have you already found your new home?</p> <br />
 
                     <div className="row">
-                        <Link to="/wFive"><button onClick={(e) => updateFound("True")}>Yes</button></Link>
-                        <Link to="/wFive"><button onClick={(e) => updateFound("False")}>No </button></Link>
+                        <Link to="/wFive"><button onClick={(e) => updateFound(true)}>Yes</button></Link>
+                        <Link to="/wFive"><button onClick={(e) => updateFound(false)}>No </button></Link>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@ class WizardFour extends Component {
 }
 
 function mapStateToProps(state) {
-    const {found} = state;
+    const { found } = state;
 
     return {
         found

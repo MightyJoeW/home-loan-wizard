@@ -1,21 +1,23 @@
-import React,  { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateCredit } from '../../state/reducer';
 
 class WizardSeven extends Component {
 
-    render(){
+    render() {
         const { updateCredit } = this.props;
-        return(
+        return (
             <div className="parent-div">
                 <div className="vert-align">
+
                     <p>Estimate your credit score</p> <br />
+
                     <div className="row">
-                        <Link to="/wEight"><button onClick={() => updateCredit("Excellent")}>Excellent</button></Link>
-                        <Link to="/wEight"><button onClick={() => updateCredit("Good")}>Good</button></Link>
-                        <Link to="/wEight"><button onClick={() => updateCredit("Fair")}>Fair</button></Link>
-                        <Link to="/wEight"><button onClick={() => updateCredit("Poor")}>Poor</button></Link>
+                        <Link to="/wEight"><button onClick={() => updateCredit('Excellent')}>Excellent</button></Link>
+                        <Link to="/wEight"><button onClick={() => updateCredit('Good')}>Good</button></Link>
+                        <Link to="/wEight"><button onClick={() => updateCredit('Fair')}>Fair</button></Link>
+                        <Link to="/wEight"><button onClick={() => updateCredit('Poor')}>Poor</button></Link>
                     </div>
                 </div>
             </div>

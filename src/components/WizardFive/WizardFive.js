@@ -1,4 +1,4 @@
-import React,  { Component } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { updateRealEstateAgent } from '../../state/reducer';
@@ -13,8 +13,8 @@ class WizardFive extends Component {
 
                     <p>Are you currently working with a real estate agent?</p> <br />
                     <div className="row">
-                        <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent("True")}>Yes</button></Link>
-                        <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent("False")}>No </button></Link>
+                        <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent(true)}>Yes</button></Link>
+                        <Link to="/wSix"><button onClick={(e) => updateRealEstateAgent(false)}>No </button></Link>
                     </div>
                 </div>
             </div>
